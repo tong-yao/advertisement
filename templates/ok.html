@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Django真是太好玩了</h1>
+<h1>{{ rbac.rbac }}</h1>
+{% if   rbac.rbac   %}
+
+    <button>书名：1   更新</button>
+{% endif %}
+
+
+<script>
+     function login(){
+
+          $.ajax({
+          type: "post",
+           url: "http://yours_url",
+            dataType : "json",
+            data: {'inputname':inputname,'inputpassword':inputpassword},
+           success: function (res) {
+            console.log(res);
+          }
+        });
+     }
+
+
+
+  </script>
+
+</body>
+</html>
